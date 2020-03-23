@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.hack40">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.CardsActivity" android:label="Cards"/>
+        <activity android:name=".Activities.AddCardActivity" android:label="Add Card"/>
+        <activity android:name=".Activities.AddBoardActivity" android:label="Add Board"/>
+        <activity android:name=".Activities.AddListActivity" android:label="Add List"/>
+        <activity android:name=".Activities.RegisterActivity" android:label="Register"/>
+        <activity android:name=".Activities.LoginActivity" android:label="Login"/>
+        <activity android:name=".Activities.BoardActivity" android:label="Boards"/>
+        <activity android:name=".Activities.CardDetailsActivity" android:label="Card Details"/>
+        <activity android:name=".Activities.ListActivity" android:label="Lists"/>
+        <activity android:name=".Activities.HomeActivity" android:label="Hackathon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".Database.BoardProvider"
+            android:authorities="com.example.android.hack40"
+            android:exported="false" />
+    </application>
+
+</manifest>

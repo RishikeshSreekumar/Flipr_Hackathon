@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_model"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="200dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_card"
+            android:text="Title"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_name"
+            android:textSize="12sp"
+            android:layout_below="@id/title_card"
+            android:text="Desc"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/board_name"
+            android:layout_below="@id/list_name"
+            android:text="Date"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/due_date"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="01-01-2000"
+            android:layout_margin="8dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_archive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:text="Archive"
+            android:layout_alignParentRight="true"/>
+
+        <!--<Button
+            android:id="@+id/btn_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_archive"
+            android:layout_margin="8dp"
+            android:text="Move"
+            android:layout_alignParentRight="true"/>-->
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
